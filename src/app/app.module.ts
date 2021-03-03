@@ -10,6 +10,8 @@ import { HomeContainerComponent } from './home-container/home-container.componen
 import { CategoryContainerComponent } from './category-container/category-container.component';
 import { ProductContainerComponent } from './product-container/product-container.component';
 import { CartContainerComponent } from './cart-container/cart-container.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { BreadcrumbsComponent } from './components/breadcrumbs/breadcrumbs.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +21,8 @@ import { CartContainerComponent } from './cart-container/cart-container.componen
     CategoryContainerComponent,
     ProductContainerComponent,
     CartContainerComponent,
+    PageNotFoundComponent,
+    BreadcrumbsComponent,
   ],
   imports: [
     BrowserModule,
