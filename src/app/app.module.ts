@@ -12,6 +12,7 @@ import { ProductContainerComponent } from './product-container/product-container
 import { CartContainerComponent } from './cart-container/cart-container.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { BreadcrumbsComponent } from './components/breadcrumbs/breadcrumbs.component';
+import { SideBarComponent } from './components/side-bar/side-bar.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { BreadcrumbsComponent } from './components/breadcrumbs/breadcrumbs.compo
     CartContainerComponent,
     PageNotFoundComponent,
     BreadcrumbsComponent,
+    SideBarComponent,
   ],
   imports: [
     BrowserModule,

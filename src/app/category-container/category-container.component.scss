@@ -1,0 +1,12 @@
+.category-container{
+    display: flex;
+    width:100%;
+    gap:10px;
+    .side-bar-wrap{
+        width: 25%;
+    }
+
+    .category{
+        width:75%;
+    }
+}
