@@ -17,7 +17,7 @@ export class BreadcrumbsComponent implements OnInit, OnDestroy {
   ngOnInit(): void {
     this.subscription.add(
       this.router.events.subscribe((data) => {
-        console.log(data);
+        
       })
     );
   }
