@@ -12,21 +12,24 @@ import { ICategory } from './models';
 export class CategoryContainerComponent implements OnInit, OnDestroy {
   public category: ICategory;
 
-  private subscription: Subscription = new Subscription()
+  private subscription: Subscription = new Subscription();
 
-  constructor(private categoryService: CategoryService, private activeRoute: ActivatedRoute) {}
+  constructor(
+    private categoryService: CategoryService,
+    private activeRoute: ActivatedRoute
+  ) {}
 
   ngOnInit(): void {
     // this.category = this.categoryService.getCategory()
-    
+
     this.subscription.add(
-      this.activeRoute.params.subscribe(data => {
-        this.category = this.categoryService.getCategory(data.id)
+      this.activeRoute.params.subscribe((data) => {
+        this.category = this.categoryService.getCategory(data.id);
       })
-    )
+    );
   }
 
-  ngOnDestroy(){
-    this.subscription.unsubscribe()
+  ngOnDestroy() {
+    this.subscription.unsubscribe();
   }
 }
